@@ -8,22 +8,10 @@ const Links = () => {
   const pathname = usePathname()
   return (
     <div className=' w-full flex items-center justify-between text-gray-400  '>
-      <Link
-        href='/'
-        className='flex items-center gap-2 max-sm-gap-1'
-      >
-        <Image
-          width={32}
-          height={32}
-          src='/images/logo.png'
-          alt='logo'
-        />
-        <h1 className='font-semibold text-xl'>Copernicus School</h1>
-      </Link>
-
+     
       <div className='flex items-center gap-8 mr-4 '>
         <Link
-          href='/contact'
+          href='/'
           className={`flex items-center  text-xl hover:text-primary gap-2  ${
             pathname === '/home' ? 'active ' : ''
           }`}
