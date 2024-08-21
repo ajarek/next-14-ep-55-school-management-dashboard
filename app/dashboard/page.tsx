@@ -2,7 +2,8 @@ import CardUser from '@/components/CardUser'
 import { ChartBar } from '@/components/ChartBar'
 import { ChartLine } from '@/components/ChartLine'
 import { ChartPie } from '@/components/ChartPie'
-import React from 'react'
+import DateInput from '@/components/DateInput'
+
 
 const Dashboard = () => {
   return (
@@ -43,8 +44,10 @@ const Dashboard = () => {
           <ChartLine />
         </div>
       </div>
-      <div className='border border-blue-300'>
-        <div>cat</div>
+      <div className='w-full flex justify-center border border-blue-300 p-2'>
+        <div className=' '>
+          <DateInput/>
+        </div>
         <div></div>
         <div></div>
       </div>
