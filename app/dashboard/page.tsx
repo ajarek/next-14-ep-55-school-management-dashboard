@@ -1,8 +1,11 @@
+import Announcements from '@/components/Announcements'
+import CalendarDate from '@/components/CalendarDate'
 import CardUser from '@/components/CardUser'
 import { ChartBar } from '@/components/ChartBar'
 import { ChartLine } from '@/components/ChartLine'
 import { ChartPie } from '@/components/ChartPie'
-import DateInput from '@/components/DateInput'
+import Events from '@/components/Events'
+
 
 
 const Dashboard = () => {
@@ -44,12 +47,18 @@ const Dashboard = () => {
           <ChartLine />
         </div>
       </div>
-      <div className='w-full flex justify-center border border-blue-300 p-2'>
-        <div className=' '>
-          <DateInput/>
+      <div className='w-full flex flex-col items-center  border border-blue-300 p-2'>
+        <div className=''>
+         <CalendarDate/>
         </div>
-        <div></div>
-        <div></div>
+        <div className='flex flex-col gap-2'>
+          <h1>Events</h1>
+          <Events/>
+        </div>
+        <div className='flex flex-col gap-2 mt-2'>
+          <h1>Announcements</h1>
+          <Announcements/>
+        </div>
       </div>
     </div>
   )

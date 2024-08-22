@@ -95,7 +95,7 @@ export function ChartLine() {
       <CardFooter>
         <div className='flex w-full '>
           <div className='w-full flex justify-center  gap-2  text-gray-500'>
-            Trending up by 5.2% this month <TrendingUp className='h-4 w-4' />
+            <div>Trending up by 5.2% this month</div> <TrendingUp className='h-4 w-4' />
           </div>
         </div>
       </CardFooter>
