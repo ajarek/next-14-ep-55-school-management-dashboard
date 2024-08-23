@@ -8,19 +8,19 @@ import {
   TableHeader,
   TableRow,
 } from '@/components/ui/table'
-import { teachersData } from '@/data/data'
+import { studentsData } from '@/data/data'
 import Image from 'next/image'
 
-const Teachers = () => {
+const Students = () => {
   return (
     <div>
-      <h1 className='font-semibold text-xl'>All Teachers</h1>
+      <h1 className='font-semibold text-xl'>All Students</h1>
       <Table>
         <TableHeader>
           <TableRow>
             <TableHead>Info</TableHead>
-            <TableHead className='max-lg:hidden'>Teacher ID</TableHead>
-            <TableHead className='max-sm:hidden'>Subjects</TableHead>
+            <TableHead className='max-lg:hidden'>Student ID</TableHead>
+            <TableHead className='max-sm:hidden'>Grade</TableHead>
             <TableHead className='max-sm:hidden'>Classes</TableHead>
             <TableHead className='max-lg:hidden'>Phone</TableHead>
             <TableHead className='max-lg:hidden'>Address</TableHead>
@@ -28,7 +28,7 @@ const Teachers = () => {
           </TableRow>
         </TableHeader>
         <TableBody>
-          {teachersData.map((tr) => (
+          {studentsData.map((tr) => (
             <TableRow key={tr.id}>
               <TableCell>
                 <div className='flex gap-2'>
@@ -46,14 +46,12 @@ const Teachers = () => {
                   </div>
                 </div>
               </TableCell>
-              <TableCell className='max-lg:hidden'>{tr.teacherId}</TableCell>
+              <TableCell className='max-lg:hidden'>{tr.studentId}</TableCell>
               <TableCell className='max-sm:hidden'>
-                {tr.subjects.length > 1
-                  ? `${tr.subjects[0]}, ${tr.subjects[1]}`
-                  : tr.subjects[0]}
+                {tr.grade}
               </TableCell>
               <TableCell className='max-sm:hidden'>
-                {tr.classes[0]}, {tr.classes[1]}, {tr.classes[2]}
+                {tr.class}
               </TableCell>
               <TableCell className='max-lg:hidden'>{tr.phone}</TableCell>
               <TableCell className='max-lg:hidden'>{tr.address}</TableCell>
@@ -74,4 +72,4 @@ const Teachers = () => {
   )
 }
 
-export default Teachers
+export default Students
