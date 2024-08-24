@@ -56,67 +56,9 @@ const menuItems = [
         href: '/dashboard/exams',
         visible: ['admin', 'teacher', 'student', 'parent'],
       },
-      {
-        icon: '/images/assignment.png',
-        label: 'Assignments',
-        href: '/dashboard/assignments',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-      {
-        icon: '/images/result.png',
-        label: 'Results',
-        href: '/dashboard/results',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-      {
-        icon: '/images/attendance.png',
-        label: 'Attendance',
-        href: '/dashboard/attendance',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-      {
-        icon: '/images/calendar.png',
-        label: 'Events',
-        href: '/dashboard/events',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-      {
-        icon: '/images/message.png',
-        label: 'Messages',
-        href: '/dashboard/messages',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-      {
-        icon: '/images/announcement.png',
-        label: 'Announcements',
-        href: '/dashboard/announcements',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-    ],
+    ]
   },
-  {
-    title: 'OTHER',
-    items: [
-      {
-        icon: '/images/profile.png',
-        label: 'Profile',
-        href: '/profile',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-      {
-        icon: '/images/setting.png',
-        label: 'Settings',
-        href: '/settings',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-      {
-        icon: '/images/logout.png',
-        label: 'Logout',
-        href: '/logout',
-        visible: ['admin', 'teacher', 'student', 'parent'],
-      },
-    ],
-  },
+  
 ]
 
 const Menu = () => {
